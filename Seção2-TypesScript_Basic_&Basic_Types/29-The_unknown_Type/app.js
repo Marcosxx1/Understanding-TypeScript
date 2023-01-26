@@ -1,16 +1,11 @@
-function add(n1, n2) {
-    return n1 + n2;
+"use strict";
+let userInput;
+let unserName;
+/* Diferente de any pois é mais retritivo
+Temos que checar o tipo que está  armazenado
+atualmente em um variável*/
+userInput = 5;
+userInput = 'max';
+if (typeof userInput === 'string') {
+    unserName = userInput;
 }
-function printResult(num) {
-    console.log('Result: ' + num);
-}
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-printResult(add(5, 12));
-var combineVaules;
-combineVaules = add;
-//combineVaules = printResult;
-//combineVaules = 5;
-console.log(combineVaules(8, 8));

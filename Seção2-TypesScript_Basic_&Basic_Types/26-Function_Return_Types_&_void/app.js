@@ -1,3 +1,4 @@
+"use strict";
 /* Function return types and 'void' */
 function add(n1, n2) {
     return n1 + n2;

@@ -1,10 +1,13 @@
- /* Array */
+ 
+export {};
+
+/* Array */
 
  const person = {
     name: 'Marcos',
     age: 50,
     hobbies: ['Sposts', 'Cooking'],
-      set value(favoriteActivities: string) {
+      set value(favoriteActivities: [string]) {
         this.hobbies = favoriteActivities;
     }
     

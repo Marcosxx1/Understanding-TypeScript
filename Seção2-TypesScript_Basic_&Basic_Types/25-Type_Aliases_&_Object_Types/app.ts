@@ -1,3 +1,6 @@
+
+export {};
+
 /* Type Aliases & Object Types
 Type aliases can be used to "create" your own types. You're not limited to storing union types though - you can also provide an alias to a (possibly complex) object type.
 
@@ -7,6 +10,8 @@ type User = { name: string; age: number };
 const u1: User = { name: 'Max', age: 30 };/*   this works!
 This allows you to avoid unnecessary repetition and manage types centrally.
  */
+
+
 
 
 

@@ -1,5 +1,6 @@
-var person = {
-    name: 'Maros',
+"use strict";
+const person = {
+    name: 'Marcos',
     age: 50
 };
-console.log(person);
+console.log(person.name);

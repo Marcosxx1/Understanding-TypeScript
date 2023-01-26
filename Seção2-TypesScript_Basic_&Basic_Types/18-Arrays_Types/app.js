@@ -1,5 +1,6 @@
+"use strict";
 /* Array */
-var person = {
+const person = {
     name: 'Marcos',
     age: 50,
     hobbies: ['Sposts', 'Cooking'],
@@ -7,11 +8,10 @@ var person = {
         this.hobbies = favoriteActivities;
     }
 };
-var favoriteActivities;
+let favoriteActivities;
 //let favoriteActivities: any[]; Definir para receber qualquer tipo, any
 favoriteActivities = ['Swim'];
 console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
+for (const hobby of person.hobbies) {
     console.log(hobby);
 }

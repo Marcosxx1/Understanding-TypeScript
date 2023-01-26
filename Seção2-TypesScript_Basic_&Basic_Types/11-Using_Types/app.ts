@@ -1,3 +1,6 @@
+
+export {};
+
 /* Tipos principais
     
     number - 1, 5.3, -10     Todos os numeros, sem difereniação

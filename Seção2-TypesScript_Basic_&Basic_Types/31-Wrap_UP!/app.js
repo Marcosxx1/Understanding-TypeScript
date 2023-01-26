@@ -1,16 +1,13 @@
-function add(n1, n2) {
-    return n1 + n2;
+"use strict";
+let userInput;
+let unserName;
+userInput = 5;
+userInput = 'max';
+if (typeof userInput === 'string') {
+    unserName = userInput;
 }
-function printResult(num) {
-    console.log('Result: ' + num);
+/* Never type */
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-printResult(add(5, 12));
-var combineVaules;
-combineVaules = add;
-//combineVaules = printResult;
-//combineVaules = 5;
-console.log(combineVaules(8, 8));
+generateError('An error occured!', 500);

@@ -1,3 +1,6 @@
+
+export {};
+
 /* Function return types and 'void' 
 
 Nos permite descrever quais tipo de funções

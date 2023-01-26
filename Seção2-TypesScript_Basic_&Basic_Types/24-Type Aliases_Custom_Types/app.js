@@ -1,8 +1,13 @@
-/* Literal Types
-São tipos em que não se diz apenas que uma determinada variavel ou parametro
-vai receber um tipo, mas definimos o tipo exato que a variável vai guardar*/
+"use strict";
+/* Type Aliases / Custom Types
+   na linha 6 e 7 atribuimos aos tipos Combinable e ConversionDescritor
+   a união de 'number | string'
+
+   Assim podemos dar um apelido para uma união e utilizá-la ao invés
+   de toda a expressão de união
+*/
 function combine(input1, input2, resultConversion) {
-    var result;
+    let result;
     if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
         return result = +input1 + +input2;
     }
@@ -15,9 +20,9 @@ function combine(input1, input2, resultConversion) {
            return result;
        } */
 }
-var combinedAges = combine(30, 39, 'as-number');
+const combinedAges = combine(30, 39, 'as-number');
 console.log(combinedAges);
-var combinedStringAges = combine(30, 26, 'as-number');
+const combinedStringAges = combine(30, 26, 'as-number');
 console.log(combinedAges);
-var combinedNames = combine('Marcos', 'Alex', 'as-text');
+const combinedNames = combine('Marcos', 'Alex', 'as-text');
 console.log(combinedNames);

@@ -1,6 +1,9 @@
  /* Any não é recomendado, pois tiraria toda a vantagem do Ts
  Que é justamente a tipagem */
  
+export {};
+
+
  enum Role {ADMIN, READ_ONLY, AUTHOR}; 
 
   const person = {

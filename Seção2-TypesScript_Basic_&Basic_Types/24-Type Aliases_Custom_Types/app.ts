@@ -6,6 +6,9 @@
    de toda a expressão de união
 */
 
+export {};
+
+
 
 type Combinable =  number | string;
 type ConversionDescriptor = number| string;

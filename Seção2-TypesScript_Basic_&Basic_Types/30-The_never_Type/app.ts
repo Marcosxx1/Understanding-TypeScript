@@ -1,3 +1,6 @@
+
+export {};
+
 let userInput: unknown;
 let unserName: string;
 

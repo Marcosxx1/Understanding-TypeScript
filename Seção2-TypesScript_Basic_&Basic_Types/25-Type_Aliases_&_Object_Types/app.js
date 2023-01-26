@@ -1,23 +1,22 @@
-/* Literal Types
-São tipos em que não se diz apenas que uma determinada variavel ou parametro
-vai receber um tipo, mas definimos o tipo exato que a variável vai guardar*/
-function combine(input1, input2, resultConversion) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
-        return result = +input1 + +input2;
-    }
-    else {
-        return result = input1.toString() + input2.toString();
-    }
-    /*    if(resultConversion === 'as-number') {
-          return +result; //+ na frente é o mesmo que parseFloat (Força para número)
-       } else {
-           return result;
-       } */
+"use strict";
+/* Type Aliases & Object Types
+Type aliases can be used to "create" your own types. You're not limited to storing union types though - you can also provide an alias to a (possibly complex) object type.
+
+For example: */
+const u1 = { name: 'Max', age: 30 }; /*   this works!
+This allows you to avoid unnecessary repetition and manage types centrally.
+ */
+/* For example, you can simplify this code:
+ */
+function greet(user) {
+    console.log('Hi, I am ' + user.name);
 }
-var combinedAges = combine(30, 39, 'as-number');
-console.log(combinedAges);
-var combinedStringAges = combine(30, 26, 'as-number');
-console.log(combinedAges);
-var combinedNames = combine('Marcos', 'Alex', 'as-text');
-console.log(combinedNames);
+function isOlder(user, checkAge) {
+    return checkAge > user.age;
+}
+function greet2(user) {
+    console.log('Hi, I am ' + user.name);
+}
+function isOlder2(user, checkAge) {
+    return checkAge > user.age;
+}

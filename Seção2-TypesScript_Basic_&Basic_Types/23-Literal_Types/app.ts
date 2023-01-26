@@ -3,6 +3,9 @@ São tipos em que não se diz apenas que uma determinada variavel ou parametro
 vai receber um tipo, mas definimos o tipo exato que a variável vai guardar*/
 
 
+export {};
+
+
 function combine(
    input1: number | string, 
    input2: number| string, 
