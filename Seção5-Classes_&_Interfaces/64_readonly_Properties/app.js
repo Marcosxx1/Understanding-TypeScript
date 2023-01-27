@@ -1,13 +1,17 @@
+/* 64. "readonly" Properties
+
+*/
 //classe Departamento
 var Departamento = /** @class */ (function () {
     //construtor
-    function Departamento(nome) {
-        this.colaboradores = [];
+    function Departamento(id, nome) {
+        this.id = id;
         this.nome = nome;
+        this.colaboradores = [];
     }
     //metodo descreve
     Departamento.prototype.descreve = function () {
-        console.log('Departamento: ' + this.nome);
+        console.log("Departamento(".concat(this.id, "): ").concat(this.nome));
     };
     //metodo para adicionar colaboradores
     Departamento.prototype.addColaborador = function (colaboradores) {
@@ -22,7 +26,7 @@ var Departamento = /** @class */ (function () {
     return Departamento;
 }());
 //Instanciando o objeto 'contabilidade'
-var contabilidade = new Departamento('Contabilidade');
+var contabilidade = new Departamento('Dep1', 'Contabilidade');
 contabilidade.addColaborador('Aline');
 contabilidade.addColaborador('Marcos');
 contabilidade.descreve();

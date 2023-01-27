@@ -1,22 +1,30 @@
+ /*Podemos inicializar tudo direto no construtor, dessa forma
+ não precisamos criar várias propriedades Ex: 
  
- //classe Departamento
- class Departamento  {
-    nome: string ;
-   private colaboradores: string[] = [];
-    
-    //construtor
-    constructor(nome: string){
+     constructor(id: string, nome: string){  
         this.nome = nome;
     }
-    /* 
-    Modificadores de acesso, nesta aula estamos vendo PRIVATE
-    
-    */
 
+    os nomes dos argumentos do construtor devem ser os mesmos 
+    que serão utilizados na classe
+    constructor(private id: string, private nome:string){
+
+    }
+ */
+
+
+ //classe Departamento
+ class Departamento  {
+    private colaboradores: string[] = [];
+    
+    //construtor
+    constructor(private id: string, private nome: string){
+     }
+ 
 
     //metodo descreve
     descreve(this: Departamento) {
-        console.log('Departamento: ' + this.nome);
+        console.log(`Departamento(${this.id}): ${this.nome}`);
     }
     
     //metodo para adicionar colaboradores
@@ -35,7 +43,7 @@
 
 
  //Instanciando o objeto 'contabilidade'
- const contabilidade = new Departamento('Contabilidade');
+ const contabilidade = new Departamento('Dep1','Contabilidade');
 
 
  contabilidade.addColaborador('Aline');

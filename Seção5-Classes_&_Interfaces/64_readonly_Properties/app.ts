@@ -1,22 +1,21 @@
- 
+ /* 64. "readonly" Properties
+linha 11, no construtor definimos a 'id' como readonly
+só será possível iniciala com o construtor e não poderá ser alterada, por enquanto
+ */
+
+
  //classe Departamento
  class Departamento  {
-    nome: string ;
-   private colaboradores: string[] = [];
+    private colaboradores: string[] = [];
     
     //construtor
-    constructor(nome: string){
-        this.nome = nome;
-    }
-    /* 
-    Modificadores de acesso, nesta aula estamos vendo PRIVATE
-    
-    */
-
+    constructor(private readonly id: string, private nome: string){
+     }
+ 
 
     //metodo descreve
     descreve(this: Departamento) {
-        console.log('Departamento: ' + this.nome);
+        console.log(`Departamento(${this.id}): ${this.nome}`);
     }
     
     //metodo para adicionar colaboradores
@@ -35,7 +34,7 @@
 
 
  //Instanciando o objeto 'contabilidade'
- const contabilidade = new Departamento('Contabilidade');
+ const contabilidade = new Departamento('Dep1','Contabilidade');
 
 
  contabilidade.addColaborador('Aline');
