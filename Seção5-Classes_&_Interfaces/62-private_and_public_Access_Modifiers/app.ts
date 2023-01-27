@@ -1,4 +1,4 @@
- 
+/*  Só descomentar o script que funciona
  //classe Departamento
  class Departamento  {
     nome: string ;
@@ -11,7 +11,7 @@
     /* 
     Modificadores de acesso, nesta aula estamos vendo PRIVATE
     
-    */
+    
 
 
     //metodo descreve
@@ -45,6 +45,6 @@
 
  contabilidade.mostraColabInf()
 
-/*  const contabilidadeCopia = {nome: 'Teste', descreve: contabilidade.descreve};
+ const contabilidadeCopia = {nome: 'Teste', descreve: contabilidade.descreve};
 
- contabilidadeCopia.descreve(); */
+ contabilidadeCopia.descreve();  */
