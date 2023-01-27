@@ -27,6 +27,13 @@ type Numeric = number | boolean;
 
 type Universal = Combinavel & boolean;
 
+
+/* Sobrecarga (Overload)
+Basca criar as variações necessárias */
+function add(a:number, b:number): number;
+function add(a:string, b:string): string;
+function add(a:string, b:number): string;
+function add(a:number, b:string): string;
 function add(a: Combinavel, b: Combinavel) {
     if (typeof a === 'string' || typeof b === 'string') { //typeguard 
         return a.toString() + b.toString();
@@ -34,7 +41,11 @@ function add(a: Combinavel, b: Combinavel) {
     return a + b;
 }
 
-type ColaboradorDesconhecido = Colaborador | Admin;
+const result = add('1', '2');
+
+result.split(' ');
+
+/* type ColaboradorDesconhecido = Colaborador | Admin;
 
 function mostraInformacaoColaborador(colab: ColaboradorDesconhecido) {
     console.log('Nome: ' + colab.nome);
@@ -80,7 +91,7 @@ usaVeiculo(v1);
 usaVeiculo(v2);
 
 
-/* Discriminated Union */
+/* Discriminated Union  
 interface Passaro {
     type: 'passaro';
     velocidadeVoo: number;
@@ -106,8 +117,8 @@ function movimentAnimal(animal: Animal) {
 }
 
 
-/* Type casting
-Index properties */
+  Type casting
+Index properties 
 //const elementoInputUsuario = <HTMLInputElement>document.getElementById('user-input');
 const elementoInputUsuario = <HTMLInputElement>document.getElementById('user-input');  
 
@@ -122,4 +133,4 @@ interface containerErro {
 const notifError: containerErro = {
     email: 'Nome não é válido',
     userName: 'Deve começar com letra maiúscula!'
-}; 
+};  */
