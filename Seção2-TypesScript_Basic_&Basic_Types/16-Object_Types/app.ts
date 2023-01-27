@@ -1,6 +1,4 @@
-
-export {};
-
+ 
 const person =  {
     name: 'Marcos',
     age: 50

@@ -1,6 +1,4 @@
-
-export {};
-
+ 
 /* Function return types and 'void' */
 
 function add(n1: number, n2:number) {

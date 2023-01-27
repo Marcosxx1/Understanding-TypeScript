@@ -1,8 +1,4 @@
-/* Trabalhando com tuplas */
  
-export {};
-
-
  const person: {
    name: string;
    age: number;

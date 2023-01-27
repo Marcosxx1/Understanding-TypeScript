@@ -1,6 +1,4 @@
-
-export {};
-
+ 
 const userName = 'Marcos';
 
 console.log(userName);

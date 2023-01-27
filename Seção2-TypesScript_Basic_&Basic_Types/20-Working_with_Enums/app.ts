@@ -1,8 +1,5 @@
  /* Enums */
-
- export {};
-
-
+ 
 /*  const ADMIN = 0;
  const READ_ONLY = 1;
  const AUTHOR = 2;

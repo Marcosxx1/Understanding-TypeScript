@@ -1,6 +1,4 @@
  
-export {};
-
 /* Array */
 
  const person = {

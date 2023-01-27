@@ -5,11 +5,7 @@
    Assim podemos dar um apelido para uma união e utilizá-la ao invés
    de toda a expressão de união
 */
-
-export {};
-
-
-
+ 
 type Combinable =  number | string;
 type ConversionDescriptor = number| string;
 

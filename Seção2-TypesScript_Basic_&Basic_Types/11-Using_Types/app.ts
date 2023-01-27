@@ -1,5 +1,5 @@
 
-export {};
+
 
 /* Tipos principais
     
